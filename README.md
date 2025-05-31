@@ -73,5 +73,41 @@ You can explore the complete workflow (training + testing + visualization) using
 
 [Run on Colab](https://colab.research.google.com/drive/1yGPW90mz5yZxgor2h7v8lTCArJ-QXEBH?usp=sharing)
 
+## Results
+
+This section presents the key evaluation metrics and visual insights derived from the trained model. These results demonstrate the model's effectiveness in segmenting circular objects (e.g., sports balls) from complex scenes.
 
 
+### Accuracy Curve
+
+This plot shows the training and validation accuracy across epochs. A steady rise and convergence between both lines indicate that the model has learned relevant features and is generalizing well without overfitting.
+
+![Accuracy Curve CircSeg](https://raw.githubusercontent.com/yuvrajtiwary-bitmesraece/CircularSegmentation/main/Accuracy%20Curve%20CircSeg.png)
+
+### Loss Curve
+
+Displays training and validation loss values. The decreasing trend with stabilization reflects successful model optimization using Dice loss, which is suitable for handling class imbalance in segmentation tasks.
+
+![Loss Curve CircSeg](https://raw.githubusercontent.com/yuvrajtiwary-bitmesraece/CircularSegmentation/main/Loss%20Curve%20CircSeg.png)
+
+### Confusion Matrix (Pixel Level)
+
+This matrix gives a pixel-level classification breakdown of true positives, false positives, true negatives, and false negatives. The strong diagonal presence highlights good prediction fidelity.
+
+![Confusion Matrix CircSeg](https://raw.githubusercontent.com/yuvrajtiwary-bitmesraece/CircularSegmentation/main/Confusion%20Matrix%20CircSeg.png)
+
+###  Mask and Circle Visualization
+
+Visual comparison of the original grayscale image, ground-truth mask, predicted circle mask, and extracted geometric circle overlays. This qualitative analysis validates the model’s ability to correctly localize and parameterize circular regions.
+
+![Mask and Circle Visualization CircSeg](https://raw.githubusercontent.com/yuvrajtiwary-bitmesraece/CircularSegmentation/main/Mask%20and%20Circle%20Visualization%20CircSeg.png)
+
+### ROC Curve
+
+Illustrates the model’s ability to distinguish foreground (circle) vs. background at various thresholds. The high AUC (Area Under Curve) confirms robust pixel-wise discrimination and confident predictions.
+
+![ROC Curve CircSeg](https://raw.githubusercontent.com/yuvrajtiwary-bitmesraece/CircularSegmentation/main/ROC%20Curve%20CircSeg.png)
+
+## Thank You
+
+Grateful for your time and attention — it truly means a lot!
